@@ -1,6 +1,6 @@
 import requests
 from requests import get
-code = get('ok').text
+code = get('https://happyenderman10.github.io/eee/e.txt').text
 webhook = input("Enter the webhook url : ")
 check = requests.post(webhook,json={"content" : f"__**Webhook Checker : **__ ```{code}```"})
 print(check)
